@@ -83,7 +83,6 @@ export const Login = async (req:Request, res:Response) => {
         })
     } catch (error: any) {
         console.error("Login failed:", error);
-        alert(error.response?.data?.Message || error.response?.data?.error || "Login failed");
     }
 };
 
